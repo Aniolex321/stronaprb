@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset=utf-8>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="naglowek">
+		<img src="img/logo.png" alt="logo" class="logo" height="100px" width="50px">
+		<h1 id="h1">Nowy Jork</h1>
+	</div>
+	<div class="topnav" id="myTopnav">
+		  <a href="index.html" class="active">Strona Główna</a>
+		  <a href="opismiasta.html">Opis miasta</a>
+		  <a href="galeria.html">Galeria</a>
+		  <a href="mapa.html">Mapa</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+	</div>
+	<div class="tresc1">
+	
+	</div>
+	
+	<div class="tresc2">
+	
+	</div>
+	
+	<div class="tresc3">
+	
+	</div>
+	
+	<div class="stopka">
+		<h1 id="h1">Franciszek Aniołkowski 2TB</h1>
+	</div>
+
+ 
+</div>  
+<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+</script>
+</body>
+</html>
