@@ -1,0 +1,88 @@
+.naglowek {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width:auto;
+}
+.logo{
+float:left;
+
+}
+#h1{
+text-align:center;
+
+}
+.tresc1 {
+  background-color:green;
+  float:left;
+  width:auto;
+  height:400px;
+}
+.tresc2 {
+  background-color:red;
+  float:left;
+  width:auto;
+  height:400px;
+}
+.tresc3 {
+  background-color:lightblue;
+  float:left;
+  width:auto;
+  height:400px;
+}
+.stopka{
+	clear:both;
+	background-color:;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+	.tresc3{
+	width:auto;
+	height:auto;
+	font-size:5vw;
+	}
+}
