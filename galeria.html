@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset=utf-8>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" href="img/icon.png ">
+</head>
+<body>
+	<div class="container">
+		<div class="naglowek" id="logo">
+			<img src="img/logo.png" alt="logo" class="logo" height="100px" width="50px">
+			<h1 id="h1">Nowy Jork</h1>
+		</div>
+		<div class="topnav" id="myTopnav">
+			  <a href="index.html" class="active">Strona Główna</a>
+			  <a href="opismiasta.html">Opis miasta</a>
+			  <a href="galeria.html">Galeria</a>
+			  <a href="map1.html">Mapa</a>
+		</div>
+		<div class="tresc11">
+				
+				<h2 id="h1">Galeria zdjęć</h2>
+				
+				<div class="slideshow-container">					  
+					  <div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<img src="img/img1.jpg" style="width:100%">
+						<div class="text">Zdjęcie 1</div>
+					  </div>
+
+					  <div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<img src="img/img2.jpg" style="width:100%">
+						<div class="text">Zdjęcie 2</div>
+					  </div>
+
+					  <div class="mySlides fade">
+						<div class="numbertext">3 / 3</div>
+						<img src="img/img3.jpg" style="width:100%">
+						<div class="text">Zdjęcie 3</div>
+					  </div>
+
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span>
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+				</div>
+						
+		<div class="tresc22">
+		Jay-Z - Empire State of Mind (feat. Alicia Keys<br>
+		<audio controls><source src="img/'ny.mp3'.mp3" type="audio/mpeg"></audio>
+		</div>
+		
+		<div class="tresc3">
+		<br>
+			<iframe width="1000vw" height="500vw"
+			src="https://www.youtube.com/embed/mNltByWL35k">
+			</iframe>
+		</div>
+		
+		<div class="stopka" id="stopka">
+			<h1 id="h1">Franciszek Aniołkowski 2TB</h1>
+		</div>
+	</div>
+	<a href="#logo" class="fixedh1">Góra</a>
+	<a href="#stopka" class="fixedh2">Dół</a>
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+</body>
+<html>
